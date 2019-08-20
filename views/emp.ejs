@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+        <nav class="navbar navbar-dark bg-dark">
+            <table>
+                <tr>
+            
+
+                        <td><h3><a href="/emp">ADD</a></h3></td><td></td>
+                 
+                 <td><h3><a href="/viewemp">VIEW</a></h3></td>
+            
+            
+            </tr>
+            </table>
+            </nav>
+            
+              
+      <div class="container">
+          <div class="row">
+              <div class="form">
+                  <form action="/read" method="POST">
+                    <table class="table">
+                        <tbody>
+                          <tr>
+                              <td>Employ name:</td><td><input type="text" name="e" class="form-control"/></td>
+                          </tr>
+                          <tr>
+                              <td>Designation:</td><td><input type="text" name="d" class="form-control"/></td>
+                            </tr>
+                            <tr>
+                              <td>Salary:</td><td><input type="text"name="s" class="form-control"/></td>
+                          </tr>
+                          <tr>
+                              <td></td><td><button type ="submit" class= "btn btn-success">submit values</button></td>
+                          </tr>
+
+                        </tbody>
+                
+                
+                
+                </form>
+
+              </div>
+          </div>
+      </div>
+
+    
+</body>
+</html>

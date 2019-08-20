@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+        
+        <nav class="navbar navbar-dark bg-dark">
+                <table>
+                    <tr>
+                
+    
+                            <td><h3><a href="/emp">ADD</a></h3></td><td></td>
+                     
+                     <td><h3><a href="/viewemp">VIEW</a></h3></td>
+                
+                
+                </tr>
+                </table>
+                </nav>
+
+                 <div class="card-columns p-5">
+                <%for(var i=0;i<data.length;i++){%>
+        <div class="card" style="width: 18rem;">
+                
+                
+                <div class="card-body">
+                  
+                  <p class="card-text"><%=data[i].e%></p>
+                  <p class="card-text"><%=data[i].d%></p>
+                  <p class="card-text"><%=data[i].s%></p>
+                 
+                </div>
+              </div>
+              <%}%>
+            </div>
+</body>
+</html>
